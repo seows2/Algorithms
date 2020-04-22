@@ -1,6 +1,6 @@
 # Backtracking
 
-Recursion을 사용하는 또 다른 문제해결 기법
+Recursion을 사용하는 또 다른 문제해결 기법   
 [N Queens 문제](#n-queens-problem)   
 [Subset Sum 문제](#subset-sum)   
 [Backtracking : General Pattern](#backtracking-general-pattern)   
@@ -18,7 +18,7 @@ Recursion을 사용하는 또 다른 문제해결 기법
  
 ![NQeeun](Images/NQueen.png)
 
-####가우스의 recursive 전략
+#### 가우스의 recursive 전략
 ![NQpseudo](Images/NQpseudo.png)
 * Queen을 위에서부터 각 row에 하나씩 배치한다.
 * r번째 queen을 r번째 row에 배치할 때, n개의 칸을 모두 시도해본다.
@@ -52,13 +52,14 @@ No subset sums to 15 -> false
   - SubsetSum(X-{a},T-a)와 SubsetSum(X-{a},T)로 reduce 가능
   - 둘 다 smaller instance of SubsetSum(X,T) -> Recursion 가능!
 <br>
+
 ##### A more implementable backtraking algorithm
 ![SSpseudo2](Images/SSpseudo2.png)
-- 임의의 원소 a를 구하기 위하여 인덱스 i를 함께 넘겨줌
-> 시간 복잡도
-> - A(n)을 Subset Sum의 시간복잡도라고 정의하면
-> A(n)의 Recurrence는 $A(n) \leq 2A(n-1) + O(1) $
-> 따라서 $A(n) = O(n^2)$
+- 임의의 원소 a를 구하기 위하여 인덱스 i를 함께 넘겨줌   
+> 시간 복잡도   
+> - A(n)을 Subset Sum의 시간복잡도라고 정의하면   
+> A(n)의 Recurrence는 $A(n) \leq 2A(n-1) + O(1) $   
+> 따라서 $A(n) = O(n^2)$   
 
 <br>
 
@@ -96,6 +97,7 @@ No subset sums to 15 -> false
 - LIS of A
   - A의 증가하는 부분열의 최대 길이
 <br>
+
 - **Backtracking 기법을 적용하기 1**
   - 어떤 결정(decide)의 연속(sequence)을 통해 LIS를 만들어 내기
   - 임의의 subsequence는 주어진 sequence A의 각 원소를 포함하느냐 포함하지 않느냐로 결정됨
