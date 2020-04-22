@@ -1,10 +1,10 @@
 # Backtracking
 
 Recursion을 사용하는 또 다른 문제해결 기법
-[N Queens 문제](#n-queens-problem)
-[Subset Sum 문제](#subset-sum)
-[Backtracking : General Pattern](#backtracking-general-pattern)
-[Longest Increasing Subsequence(LIS) 문제](#longest-increasing-subsequencelis)
+[N Queens 문제](#n-queens-problem)   
+[Subset Sum 문제](#subset-sum)   
+[Backtracking : General Pattern](#backtracking-general-pattern)   
+[Longest Increasing Subsequence(LIS) 문제](#longest-increasing-subsequencelis)   
 
 ## 백트래킹 알고리듬
 - 올바른 또는 최선의 **결정**으로 점진적으로 문제를 해결해나간다.
